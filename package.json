@@ -1,0 +1,9 @@
+{
+  "name": "leikashblog",
+  "version": "1.0.0",
+  "description": "for blog site",
+  "main": "index.js",
+  "repository": "https://github.com/leikash/leikashblog.git",
+  "author": "Leikash",
+  "license": "MIT"
+}
