@@ -1,14 +1,36 @@
 import React from "react"
-import Layout from "../components/layout.js"
+import { graphql, Link } from "gatsby"
 
-const BlogPage = () => {
+import Layout from "../components/layout"
+// import SEO from "../components/seo"
+
+const BlogPage = ({ data }) => {
   return (
       <div>
         <Layout>
-          <h1 className="title">Good morning!</h1>
+          <ul>
+            {data.allMicrocmsBlog.edges.map(({ node }) => (
+              <li key={node.blogId}>
+                <Link to={`/blog/${node.blogId}`}>{node.title}</Link>
+              </li>
+            ))}
+          </ul>
         </Layout>
       </div>
   )
 }
 
 export default BlogPage
+
+export const query = graphql`
+  query {
+    allMicrocmsBlog {
+      edges {
+        node {
+          blogId
+          title
+        }
+      }
+    }
+  }
+`
