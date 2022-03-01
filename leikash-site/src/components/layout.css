@@ -1,3 +1,11 @@
 .title {
     color: blue;
   }
+
+.blogTitle{
+   transition: color 0.3s;
+}
+  
+.blogTitle:hover{
+  color : #ff7043;
+}

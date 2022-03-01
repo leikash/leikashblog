@@ -10,9 +10,9 @@ const BlogPage = ({ data }) => {
         <Layout>
           <ul>
             {data.allMicrocmsBlog.edges.map(({ node }) => (
-              <li key={node.blogId}>
-                <Link to={`/blog/${node.blogId}`}>{node.title}</Link>
-              </li>
+              <dir key={node.blogId}>
+                <Link className="blogTitle" to={`/blog/${node.blogId}`}>{node.title}</Link>
+              </dir>
             ))}
           </ul>
         </Layout>
