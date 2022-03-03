@@ -67,3 +67,13 @@ yarn-error.log
 .pnp.js
 # Yarn Integrity file
 .yarn-integrity
+
+# vscodeの色変更プラグインを無視する added 2022/03/03
+# Refer https://zenn.dev/hkawasaki/articles/baca58035c9e7c
+.vscode/*
+!.vscode/tasks.json
+!.vscode/extensions.json
+*.code-workspace
+
+# Local History for Visual Studio Code
+.history/
