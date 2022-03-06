@@ -5,7 +5,8 @@ import React from 'react'
 // import store from "../store"
 import Header from './header'
 import Footer from './footer'
-import "./layout.css"
+//import "./layout.css"
+import '../utils/global.css'
 
 // const store = createStore(reducer)
 // console.log(store)
