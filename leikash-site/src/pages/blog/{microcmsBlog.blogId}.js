@@ -10,6 +10,18 @@ const BlogPage = ({ data }) => (
     <h1>{data.microcmsBlog.title}</h1>
     <div
       dangerouslySetInnerHTML={{
+        __html: `${data.microcmsBlog.mainVisual}`,
+      }}
+    />
+    <hr/>
+    <div
+      dangerouslySetInnerHTML={{
+        __html: `${data.microcmsBlog.summary}`,
+      }}
+    />
+    <hr/>
+    <div
+      dangerouslySetInnerHTML={{
         __html: `${data.microcmsBlog.body}`,
       }}
     />
@@ -23,6 +35,12 @@ export const query = graphql`
     microcmsBlog(id: { eq: $id }) {
       blogId
       title
+      mainVisual {
+        url
+        height
+        width
+      }
+      summary
       body
       writer {
         name
