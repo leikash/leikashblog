@@ -8,11 +8,13 @@ const BlogPage = ({ data }) => (
   <Layout>
     <span>{data.microcmsBlog.writer.name}</span>
     <h1>{data.microcmsBlog.title}</h1>
-    <div
-      dangerouslySetInnerHTML={{
-        __html: `${data.microcmsBlog.mainVisual}`,
-      }}
-    />
+    <div>
+      <img
+        src={data.microcmsBlog.mainVisual.url}
+        alt="Main visual"
+        width="50%"
+      />
+    </div>
     <hr/>
     <div
       dangerouslySetInnerHTML={{
