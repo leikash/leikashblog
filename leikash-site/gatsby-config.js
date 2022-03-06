@@ -15,8 +15,8 @@
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: "Hello Gatsby Site",
-    author: "Kashbellie",
+    title: "Fruitful World",
+    author: "Leikash",
     category: ["Blog", "Try", "React"],
     user: { name: "Kashbellie", email: "Kashbellie@gmail" },
   },
@@ -33,7 +33,15 @@ module.exports = {
         ],
       },
     },
-    'gatsby-plugin-netlify'
+    'gatsby-plugin-netlify',
+/*    
+    {
+      resolve: `gatsby-plugin-react-redux`,
+      options: {
+        pathToCreateStoreModule: "./src/components/layout.js" // 先ほど作成したreduxの設定ファイルのパスを入力
+      }
+    },
+*/
   ],
 }
 
