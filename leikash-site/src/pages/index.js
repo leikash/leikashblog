@@ -2,6 +2,7 @@ import React from "react"
 import { graphql, Link } from "gatsby"
 
 import Layout from "../components/layout"
+import Meta from "../components/meta"
 // import SEO from "../components/seo"
 
 const BlogPage = ({ data }) => {
@@ -9,6 +10,7 @@ const BlogPage = ({ data }) => {
   return (
       <div>
         <Layout>
+          <Meta/>
           <ul>
             {data.allMicrocmsBlog.edges.map(({ node }) => (
               <dir key={node.blogId}>
