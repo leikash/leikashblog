@@ -9,7 +9,7 @@ const BlogPage = ({ data }) => {
 
   return (
       <div>
-        <Layout>
+        <Layout class="content-center">
           <Meta/>
           <ul>
             {data.allMicrocmsBlog.edges.map(({ node }) => (
@@ -19,7 +19,7 @@ const BlogPage = ({ data }) => {
                   alt="Main visual"
                   width="10%"
                 />
-                <Link className="blogTitle" to={`/blog/${node.blogId}`}>{node.title}</Link>
+                <Link class="content-center" to={`/blog/${node.blogId}`}>{node.title}</Link>
                 <div
                   dangerouslySetInnerHTML={{
                   __html: `${node.summary}`,

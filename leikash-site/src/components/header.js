@@ -1,13 +1,25 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { useStaticQuery, graphql, Link } from 'gatsby'
+
+
 
 const Header = () => {
+  const logo = useStaticQuery(graphql`
+    {
+      file(name: { eq: "logo_leikashblog" }) {
+        publicURL
+      }
+    }
+    `
+  )
     return (
-        <header>
+        <header class="bg-green-600">
             <nav>
                 <ul>
-                    <h1 className="title">Top page</h1>
-                    <li><Link to="/">top</Link></li>
+                    <h1 class="text-xl text-black-500">
+                      <img src={logo.file.publicURL} alt="Leikash blog logo"/>
+                    </h1>
+                    <li><Link className="text-white content-center" to="/">Top</Link></li>
                 </ul>
             </nav>
         </header>

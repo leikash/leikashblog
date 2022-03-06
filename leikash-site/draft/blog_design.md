@@ -58,6 +58,19 @@
 - 検索窓
 - 記事の目次（スクロール後固定）
 
+[配色案](https://saruwakakun.com/life/colors#greenn)
+#8BC34A
+#9CCC65
+#FF8A65
+---
+
+#79BD9A 
+#A8DBA8 
+#EFEFEF 
+#757575
+
+[Gatsby：イメージ（画像）を表示させるための作法](https://qiita.com/atomyah/items/e6aebf0a0abe3d488787)
+
 ### 2-2. 記事のAPIを決める
 
 #### 共通(ヘッダー)
