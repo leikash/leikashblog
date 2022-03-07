@@ -5,7 +5,6 @@ import React from 'react'
 // import store from "../store"
 import Header from './header'
 import Footer from './footer'
-import '../utils/global.css'
 
 // const store = createStore(reducer)
 // console.log(store)
@@ -31,4 +30,5 @@ const Layout = ( props ) => {
     )
 }
 */
+
 export default Layout

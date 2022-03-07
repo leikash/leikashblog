@@ -13,13 +13,13 @@ const Header = () => {
     `
   )
     return (
-        <header class="bg-green-600">
+        <header className='bg-green-800 text-white flex justify-center'>
             <nav>
                 <ul>
-                    <h1 class="text-xl text-black-500">
+                    <h1>
                       <img src={logo.file.publicURL} alt="Leikash blog logo"/>
                     </h1>
-                    <li><Link className="text-white content-center" to="/">Top</Link></li>
+                    <li className='text-center'><Link to="/">Top</Link></li>
                 </ul>
             </nav>
         </header>

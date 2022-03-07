@@ -1,8 +1,12 @@
 module.exports = {
-    purge: ["./src/**/*.js"], //編集
-    theme: {
-      extend: {},
-    },
-    variants: {},
-    plugins: [],
-  }
+  content: [
+    // Example content paths...
+    // './public/**/*.html',
+    './src/**/*.{js,jsx,ts,tsx,vue}',
+  ],
+  theme: {
+    extend: {},
+  },
+  variants: {},
+  plugins: [],
+}

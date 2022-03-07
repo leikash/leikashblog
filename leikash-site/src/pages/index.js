@@ -9,7 +9,7 @@ const BlogPage = ({ data }) => {
 
   return (
       <div>
-        <Layout class="content-center">
+        <Layout>
           <Meta/>
           <ul>
             {data.allMicrocmsBlog.edges.map(({ node }) => (
@@ -19,7 +19,7 @@ const BlogPage = ({ data }) => {
                   alt="Main visual"
                   width="10%"
                 />
-                <Link class="content-center" to={`/blog/${node.blogId}`}>{node.title}</Link>
+                <Link className="text-center" to={`/blog/${node.blogId}`}>{node.title}</Link>
                 <div
                   dangerouslySetInnerHTML={{
                   __html: `${node.summary}`,
@@ -28,7 +28,7 @@ const BlogPage = ({ data }) => {
               </dir>
             ))}
           </ul>
-          <button class="block uppercase mx-auto shadow bg-indigo-800 hover:bg-indigo-700 focus:shadow-outline focus:outline-none text-white text-xs py-3 px-10 rounded">
+          <button className="block uppercase mx-auto shadow bg-indigo-800 hover:bg-indigo-700 focus:shadow-outline focus:outline-none text-white text-xs py-3 px-10 rounded">
             <Link to="/">Top</Link>
           </button>
         </Layout>

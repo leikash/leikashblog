@@ -2,10 +2,13 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../../components/layout"
+import Meta from "../../components/meta"
 // import SEO from "../../components/seo"
 
 const BlogPage = ({ data }) => (
   <Layout>
+    <Meta/>
+    <h1>TEST STRING blog</h1>
     <span>{data.microcmsBlog.writer.name}</span>
     <h1>{data.microcmsBlog.title}</h1>
     <div>
