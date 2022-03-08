@@ -13,7 +13,7 @@ const Header = () => {
     `
   )
     return (
-        <header className='bg-green-800 text-white flex justify-center'>
+        <header className='hover:underline bg-green-800 text-gray-100 flex justify-center'>
             <nav>
                 <ul>
                     <h1>

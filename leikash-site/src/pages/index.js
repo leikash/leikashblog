@@ -19,7 +19,7 @@ const BlogPage = ({ data }) => {
                   alt="Main visual"
                   width="10%"
                 />
-                <Link className="text-center" to={`/blog/${node.blogId}`}>{node.title}</Link>
+                <Link className='hover:underline text-blue-600 visited:text-purple-600 ...' to={`/blog/${node.blogId}`}>{node.title}</Link>
                 <div
                   dangerouslySetInnerHTML={{
                   __html: `${node.summary}`,

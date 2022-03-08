@@ -5,10 +5,12 @@ import Layout from "../../components/layout"
 import Meta from "../../components/meta"
 // import SEO from "../../components/seo"
 
-const BlogPage = ({ data }) => (
+const BlogPage = ({ data }) => {
+//  console.log({data})
+  return (
   <Layout>
     <Meta/>
-    <h1>TEST STRING blog</h1>
+    <h1 className="text-green-700 text-center">Under construction!!</h1>
     <span>{data.microcmsBlog.writer.name}</span>
     <h1>{data.microcmsBlog.title}</h1>
     <div>
@@ -31,7 +33,8 @@ const BlogPage = ({ data }) => (
       }}
     />
   </Layout>
-)
+  )
+}
 
 export default BlogPage
 
